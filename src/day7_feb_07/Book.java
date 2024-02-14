@@ -17,8 +17,11 @@ public class Book {
         return "Book Title: "+title + ", author:"+ author + ": "+bookAvailabilityStatus;
     }
 
+    public String bookDetails(){
+        return "Book Title: "+title+"\nAuthor: "+author+"\nisbn: "+isbn+"\nGenre: "+genre+"\nAvailability: "+bookAvailabilityStatus;
+    }
     @Override
     public String toString() {
-        return title + " status: "+bookAvailabilityStatus;
+        return title + "... status: "+bookAvailabilityStatus;
     }
 }
